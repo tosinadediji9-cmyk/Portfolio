@@ -10,7 +10,7 @@ form.addEventListener("submit", async (event) => {
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
-    const response = await fetch("https://contact-api-amber-seven.vercel.app/", {
+    const response = await fetch("https://contact-api-amber-seven.vercel.app/api/contact", {
         method: "POST",
 
         headers: {
